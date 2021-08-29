@@ -1,0 +1,108 @@
+body, html{
+    height: 100%;
+}
+body{
+    text-align: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: beige;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.form-box{
+    width: 300px;
+    padding: 40px;
+    background: whitesmoke;
+    text-align: center;
+    border-bottom: 1px solid orange;
+    border-left: 1px solid orange;
+    border-right:1px solid orange;
+    border-top: 1px solid orange;
+}
+.form-title{
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.form-box input[type="text"],
+.form-box button[type="button"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    border: 2px solid;
+    width: 200px;
+    outline: none;
+    color: orange;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.form-box button[type="boton1"]
+{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    border: 2px solid;
+    width: 200px;
+    outline: none;
+    color:whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;
+    background-color:#3b5998 ;
+}
+.form-box button[type="boton2"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    padding: 14px 10px;
+    border: 2px solid;
+    width: 200px;
+    outline: none;
+    color:whitesmoke;
+    border-radius: 24px;
+    transition: 0.25s;
+    background-color: rgb(223, 71, 45);
+}
+.form-box button[type="button"]
+.form-box button[type="boton1"]
+.form-box button[type="boton2"]{
+    border: 0;
+    cursor: pointer;
+}
+.form-box button[type="button"]:hover
+.form-box button[type="boton1"]:hover
+.form-box button[type="boton2"]:hover{
+    background: none;
+}
+p{
+    display: inline-block;
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: brown;
+}
+p::after,p::before{
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 1px;
+    background-color: black;
+    top: 0.6em;
+}
+p::before{
+    left: -140px;
+}
+p::after{
+    right: -140px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
