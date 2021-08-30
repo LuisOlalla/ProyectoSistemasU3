@@ -1,12 +1,24 @@
 body, html{
     height: 100%;
 }
+a label{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    color: black;
+    align-items: left;
+}
+a:hover{
+    color: blue;
+}
 body{
     text-align: center;
     height: 100%;
     margin: 0;
     padding: 0;
-    background: beige;
+    background: rgb(250, 217, 202);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -16,12 +28,8 @@ body{
 .form-box{
     width: 300px;
     padding: 40px;
-    background: whitesmoke;
+    background: white;
     text-align: center;
-    border-bottom: 1px solid orange;
-    border-left: 1px solid orange;
-    border-right:1px solid orange;
-    border-top: 1px solid orange;
 }
 .form-title{
     color: black;
@@ -78,16 +86,23 @@ body{
     border: 0;
     cursor: pointer;
 }
-.form-box button[type="button"]:hover
-.form-box button[type="boton1"]:hover
+.form-box button[type="button"]:hover{
+    background: none;
+    color: black;
+}
 .form-box button[type="boton2"]:hover{
     background: none;
+    color: black;
+}
+.form-box button[type="boton1"]:hover{
+    background: none;
+    color: black;
 }
 p{
     display: inline-block;
     position: relative;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: brown;
+    color: rgb(250, 171, 119);
 }
 p::after,p::before{
     content: "";
