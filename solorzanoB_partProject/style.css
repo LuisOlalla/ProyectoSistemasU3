@@ -1,0 +1,371 @@
+html {
+    box-sizing: border-box;
+    /* font-size: 62.5%; */
+}
+
+*,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(img/fondo.png);
+    /* overflow: hidden*/
+}
+
+/* header {
+    min-height: 15vh;
+    background: #3f3f3f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.container-higher {
+    display: flex;
+    width: 98%;
+    margin: auto;
+}
+
+.container-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 600px;
+    border: 5px solid #6d0796;
+}
+/* TODO LO DEL CONTAINER IZQUIERDO */
+.cabecera-lateral {
+    text-align: center;
+    background: #6d0796;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+}
+.cuerpo-lateral {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cuerpo-lateral div {
+    /* margin-bottom: 20px; */
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+.container-ubicacion {
+    border-bottom: 1px solid rgb(90, 87, 87);
+}
+
+.container-inmuebles {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(90, 87, 87);
+}
+.container-habitaciones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(90, 87, 87);
+}
+
+.container-precio {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(90, 87, 87);
+}
+
+#caja-boton {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+select {
+    width: 100%;
+    font-size: 1rem;
+    border-color: orange;
+    border-radius: 5px;
+    background-color: transparent;
+    border-width: 2px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+select:focus {
+    outline: none;
+}
+
+#botonConsulta {
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+#btn-reaccion {
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(214, 24, 24);
+    border-radius: 50%;
+}
+
+#boton-wasa {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    border: 1px solid rgb(24, 214, 24);
+    border-radius: 50%;
+}
+
+#boton-contacto {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 184, 51);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    font-size: 1.8rem;
+}
+
+#cuota {
+    font-size: 2rem;
+    width: 300px;
+    text-align: left;
+    height: 130px;
+}
+
+#cuota div {
+    background-color: #3f3f3f;
+    border-radius: 5px;
+    color: #dfd7d7;
+    font-weight: 500;
+    /* padding: 10px; */
+    z-index: 100;
+}
+
+/* #tit {
+    padding-top: 50px;
+    padding-top: 50px;
+    font-size: 2.7rem;
+    color: #3f3f3f;
+    font-weight: 600;
+} */
+
+/* TODO LO DEL CONTAINER DERECHO */
+.container-right {
+    width: 70%;
+    /* max-width: calc(705px - 5px); */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+}
+
+.postCard1,
+.postCard2,
+.postCard3,
+.postCard4,
+.postCard5,
+.postCard6,
+.postCard6,
+.postCard7 {
+    width: 100%;
+    height: 232px;
+    /* max-width: calc(705px - 5px); */
+    margin: auto;
+    /* height: 100%; */
+    display: flex;
+    /* align-items: center; */
+    margin-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.carrusel_img {
+    background: #fff;
+    /* margin: 40px 0; */
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    width: 30%;
+    /* box-sizing: border-box; */
+}
+
+.container_info {
+    width: 70%;
+    height: 232px;
+    padding-left: 1rem;
+    /* box-sizing: border-box; */
+}
+
+/* Slider Banner */
+.slider_banner {
+    overflow: hidden;
+    /* Para que las imagenes no se antepongan por ejemplo a un menu fijo */
+    z-index: 1000;
+    /* Permite decirle mover a los elementos internos*/
+    position: relative;
+    width: 100%;
+}
+
+.slider_banner .banner1,
+.banner2,
+.banner3,
+.banner4,
+.banner5,
+.banner6,
+.banner7 {
+    position: relative;
+    width: 100%;
+}
+
+.slider_banner .banner1 img,
+.banner2 img,
+.banner3 img,
+.banner4 img,
+.banner5 img,
+.banner6 img,
+.banner7 img {
+    /* Quita cualquier espaciado entre las imagenes o componentes */
+    vertical-align: top;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.slider_banner .flecha_banner {
+    font-size: 35px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.301);
+    position: absolute;
+    top: 50%;
+    z-index: 1100;
+}
+
+.slider_banner .flecha_banner:hover {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.slider_banner .anterior {
+    left: 20px;
+}
+
+.slider_banner .siguiente {
+    right: 20px;
+}
+
+.container_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.portal_1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.portal_2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+/* DISEÑO DE LA CARTA DE INFROMACIÓN */
+
+.postingCard_Level1 {
+    display: flex;
+    /* height: 50px; */
+    width: 100%;
+}
+
+.postingCard_Level1 .CardPrice h2 {
+    font-weight: lighter;
+    line-height: 0px;
+    text-align: center;
+}
+
+.postingCard_Level1 .CardLocation h4 {
+    font-weight: lighter;
+    line-height: 0px;
+    text-align: center;
+}
+
+.CardPrice {
+    width: 25%;
+}
+
+.CardLocation {
+    width: 75%;
+    text-align: center;
+}
+
+.postingCard_Level2 ul {
+    margin: 0;
+    padding: 0;
+    /*Quita el enumerado o punto*/
+    list-style: none;
+}
+
+.postingCard_Level2 ul li {
+    display: inline-block;
+}
+
+.poster-botones {
+    display: flex;
+    flex-direction: row;
+}
+
+.boton-reaccion {
+    margin-right: 10px;
+}
+
+.botones-contacto {
+    display: flex;
+    flex-direction: row;
+}
+
+.botones-contacto div {
+    margin-right: 10px;
+}
+/* .postingCard_Level3 h4 {
+    line-height: 0px;
+} */
