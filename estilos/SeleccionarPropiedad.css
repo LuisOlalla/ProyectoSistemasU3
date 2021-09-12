@@ -6,66 +6,125 @@
     background-image: url(../imagenes/fondo.png);
 }
 
-.logo{
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 900px;
-    font-size: 35px;
 
+/* Estilos para cabecera */
+
+.cabecera1{
+    box-shadow: 0px 0px 7px 0px white;
+    background-color: skyblue;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    height: 70px;
+    grid-area: cabecera;
+    border: 1px solid white;
+    width: 1350px;
+  
+   
+}
+.nav {	
+    color:#f4f5f5;
+	font-size:10px;
+	line-height:70px;
+	float:left;
     
-    padding: 10px;
-    margin-left: 20px;
-    color: black;
-    text-shadow: 1px 1px 0px #cccccc;
-    text-transform: uppercase;
+}
+.nav a {
+    
+	display:inline-block;
+	color:rgb(24, 22, 22);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    font: 150% sans-serif;	
+
+}
+ul, ol {
+    list-style:none;
+    
+}
+.nav > li {
+    float:left;
+}
+.nav li a {
+  
+    color:rgb(48, 43, 43);
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;   
+}
+.nav li a:hover {
+    background-color:orange;
+    
+}
+.nav li ul {
+    
+    display:none;
+    position:absolute;
+    min-width:140px;
+    background-color:white;
+}
+.nav li:hover > ul {
+    display:block;
+}
+.wrapper {
+	width:95%; 
+	max-width:1400px; 
+	margin:10px; 
+    overflow:hidden;    
+}
+header .boton-ingresar {
+    float:right;
+    line-height:50px;
+    color:#292828;	
+}
+header .boton-publicar {
+    float:right;
+    line-height:50px;
+    color:#f2f2f2;
+}
+header .boton-ingresar a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+    background:green;
+    border-radius:10px;
+    margin-left: 10px;
+    margin-top: -10px;
+  
+}
+header .boton-ingresar a:hover {
+	background:red;
+	border-radius:10px;
+}
+header .boton-publicar a {
+	display:inline-block;
+	color:rgb(29, 28, 28);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    margin-left: 10px;
+ 
 }
 
-.logo h1{
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 900px;
-    font-size: 25px;
+header .boton-publicar a:hover {
+	
+	border-radius:50px;
 }
-
-#cabecera{
-    display: grid;
-    grid-template-columns: 65% 30%;
-    align-items: center;
-    width: 100%;
-    height: 100px;
-    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+img{
+    float: left;
+    margin-top: -10px;
 }
-
-#menu{
-    width: 100%;
-    height: 100%;
-    padding-left: 20px;
-}
-
-#menu > ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
-    list-style: none;
-    height: 100%;
-    padding-right: 20px;
-}
-
-#menu a{
-    color: #444444;
-    text-transform: uppercase;
-    padding: 5px;
-    transition: all 300ms;
-}
-
-#menu a:hover{
-    background: #cccccc;
-    color: white;
-}
-
+/* Fin de estilos para cabecera */
 
 .titulo{
     padding: 7px;
