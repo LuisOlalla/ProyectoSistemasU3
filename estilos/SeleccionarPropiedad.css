@@ -6,64 +6,480 @@
     background-image: url(../imagenes/fondo.png);
 }
 
-.logo{
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 900px;
-    font-size: 35px;
 
+/* Estilos para cabecera */
+
+.cabecera1{
+    box-shadow: 0px 0px 7px 0px white;
+    background-color: skyblue;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    height: 70px;
+    grid-area: cabecera;
+    border: 1px solid white;
+    width: 1350px;
+  
+   
+}
+.nav {	
+    color:#f4f5f5;
+	font-size:10px;
+	line-height:70px;
+	float:left;
     
-    padding: 10px;
-    margin-left: 20px;
-    color: black;
-    text-shadow: 1px 1px 0px #cccccc;
-    text-transform: uppercase;
+}
+.nav a {
+    
+	display:inline-block;
+	color:rgb(24, 22, 22);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    font: 150% sans-serif;	
+
+}
+ul, ol {
+    list-style:none;
+    
+}
+.nav > li {
+    float:left;
+}
+.nav li a {
+  
+    color:rgb(48, 43, 43);
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;   
+}
+.nav li a:hover {
+    background-color:orange;
+    
+}
+.nav li ul {
+    
+    display:none;
+    position:absolute;
+    min-width:140px;
+    background-color:white;
+}
+.nav li:hover > ul {
+    display:block;
+}
+.wrapper {
+	width:95%; 
+	max-width:1400px; 
+	margin:10px; 
+    overflow:hidden;    
+}
+header .boton-ingresar {
+    float:right;
+    line-height:50px;
+    color:#292828;	
+}
+header .boton-publicar {
+    float:right;
+    line-height:50px;
+    color:#f2f2f2;
+}
+header .boton-ingresar a {
+	display:inline-block;
+	color:#fff;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold;
+    background:green;
+    border-radius:10px;
+    margin-left: 10px;
+    margin-top: -10px;
+  
+}
+header .boton-ingresar a:hover {
+	background:red;
+	border-radius:10px;
+}
+header .boton-publicar a {
+	display:inline-block;
+	color:rgb(29, 28, 28);
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+    font-weight:bold;
+    margin-left: 10px;
+ 
 }
 
-.logo h1{
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 900px;
-    font-size: 25px;
+header .boton-publicar a:hover {
+	
+	border-radius:50px;
+}
+img{
+    float: left;
+    margin-top: -10px;
+}
+/* Fin de estilos para cabecera */
+
+.titulo{
+    padding: 7px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-#cabecera{
+.subtitulo{
+    padding: 7px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Estilos para galería de imagenes */
+
+.gallery-container{
     display: grid;
-    grid-template-columns: 65% 30%;
-    align-items: center;
-
-
-    width: 100%;
-    height: 120px;
-    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: 150px;
+    padding: 35px;
+    grid-gap: 10px;
+    
 }
 
-#menu{
+.gallery__item{
+    position: relative;
+}
+
+.gallery__img{
     width: 100%;
     height: 100%;
-    padding-left: 20px;
+    object-fit: cover;
+    position:relative;
 }
 
-#menu > ul{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.gallery__item:nth-child(1){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
 
+.gallery__item:nth-child(2){
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(3){
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(4){
+    grid-column-start: span 1;
+}
+
+.gallery__item:nth-child(5){
+    grid-column-start: span 1;
+}
+/* Fin de estilos para galería de imagenes */
+
+
+/* Estilos para la sección 2 */
+.seccionDos{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+/* Fin de estilos para la sección 2 */
+
+
+/* Estilos para el menú 2*/
+.listaDos{
     list-style: none;
-    height: 100%;
-    padding-right: 20px;
+    padding: 0;
+    width: 100%;
+    max-width: 1010px;
+    margin: left;
 }
 
-#menu a{
-    color: #444444;
-    text-transform: uppercase;
+.itemSecDos{
+    display: inline-block;
+    text-align: center;
+    padding-right: 1px;
+}
+
+.itemSecDos a{
+    text-decoration: none;
+    display: block;
+    color: #7c98a7;
     padding: 5px;
-    transition: all 300ms;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif
+}
+/* Fin de estilos para el menú 2*/
+
+
+/* Estilos para características de casa*/
+.caracteristicasCasa{
+    display: grid;
+    padding-top: 30px;
+    padding: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30px;
 }
 
-#menu a:hover{
-    background: #cccccc;
-    color: white;
+.itemCasa{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+    justify-self: start;
+    align-items: center;
 }
+
+.etiqueta{
+    font-size: 15px;
+    color: #68808c;
+    text-align: unset;
+    max-width: unset;
+    margin: 0 0 0 12px;
+    text-transform: lowercase;
+    font-size: 14px;
+    line-height: 20px;
+}
+/* Fin de estilos para características de casa*/
+
+
+/* Estilos para los datos del proyecto */
+.datosConstruccion{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 1000px;
+    padding: 1%;
+    border-left: 9px solid #3a0c3d;
+    border-radius: 12px;
+    box-shadow: 3px 3px 12px rgb(124 152 167 / 20%);
+    margin: 6px 0 32px;
+    position: relative;
+    margin-left: 1.5%;
+}
+
+.fechas{
+    display: grid;
+    padding-top: 30px;
+    padding: 2px;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.fechaConstruccion{
+    display: grid;
+    padding: 2%;
+    grid-template-columns: auto auto;
+    justify-self: start;
+    align-items: center;
+}
+
+.fechaEntrega{
+    display: grid;
+    padding: 2%;
+    grid-template-columns: auto auto;
+    justify-self: start;
+    align-items: center;
+}
+
+.descripcionConstruccion{
+    display: grid;
+    border-left: 1px solid #cbd6dc;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 20px 16px;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    margin: 0;
+}
+/* Fin de estilos para los datos del proyecto */
+
+
+/* Estilos para descripción del proyecto */
+.descripcionProyecto{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    width: 1000px;
+    padding: 2%;
+    line-height: 25px;
+}
+
+.titulo-descripcionProyecto{
+    padding-bottom: 2%;
+}
+
+.etapas{
+    grid-template-rows: repeat(2, 1fr);
+    padding-top: 2%;
+}
+/* Fin de estilos para descripción del proyecto */
+
+
+/* Estilos para características generales del proyecto */
+.caracteristicasGenerales{
+    display: grid;
+    width: 1000px;
+    padding: 2%;
+    line-height: 25px;
+}
+
+.características{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.generales-titulo{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.lista-generales{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+
+.servicios{
+    font-size: 16px;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.titulo-servicios{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.lista-servicios{
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 200%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+/* Fin de estilos para descripción del proyecto */
+
+
+/* Estilos para unidades */
+.unidades{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tituloUnidades{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    margin: 16px 0;
+}
+
+.Habitaciones{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.botonHabitaciones{
+    width: 200px;
+    height: 40px;
+    border: 1px solid rgb(255, 85, 0);
+    font-weight: 600;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 12px;
+    margin-bottom: 16px;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 8px 16px;
+}
+
+.unidadesVenta{
+    width: 1000px;
+    border: 1px solid rgb(203, 214, 220);
+    border-radius: 12px;
+    padding: 16px 16px 0px;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.tituloVentas{
+    font-size: 16px;
+    margin-bottom: 19px;
+}
+.tituloVentas > span{
+    font-weight: bold;
+}
+
+.casaVentaUno{
+    display: inline-block;
+    height: unset;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.casaVentaUno-SeccionInfo{
+    width: 100%;
+    margin: 16px 0px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.casaVentaUno-SeccionTexto{
+    align-items: flex-start;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+}
+
+.casaVentaUno-SeccionTitulo{
+
+}
+
+.unitPropertyType{
+    position: static;
+    color: rgb(124, 152, 167);
+    font-weight: 500;
+    font-size: 12px;
+    top: -14px;
+}
+
+.unitFeatures{
+
+}
+
+.StyledButton-sc-1b3blmr-0{
+
+}
+
+
+
+/* Fin de estilos para unidades */
+
+
+
+/* Estilos para el aside*/
+
+/* Fin de estilos para el aside*/
+
+
+/* Estilos para el formulario 2*/
+/* Fin de estilos para el formulario 2*/
