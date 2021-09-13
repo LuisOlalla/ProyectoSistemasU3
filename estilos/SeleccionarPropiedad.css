@@ -19,14 +19,21 @@
     height: 70px;
     grid-area: cabecera;
     border: 1px solid white;
-    width: 1350px;  
+    width: 1325px;
+    
+   
+  
+   
 }
-
 .nav {	
     color:#f4f5f5;
 	font-size:10px;
 	line-height:70px;
 	float:left;
+  
+  
+  
+  
     
 }
 .nav a {
@@ -36,24 +43,28 @@
 	text-decoration:none;
 	padding:10px 20px;
 	line-height:normal;
-	font-size:20px;
-    font-weight:bold;
-    font: 150% sans-serif;	
+	font-size:15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+   
 
 }
 ul, ol {
     list-style:none;
+    z-index:1000
     
 }
 .nav > li {
     float:left;
+ 
 }
 .nav li a {
   
     color:rgb(48, 43, 43);
     text-decoration:none;
     padding:10px 12px;
-    display:block;   
+    display:block;  
+    
 }
 .nav li a:hover {
     background-color:orange;
@@ -65,25 +76,30 @@ ul, ol {
     position:absolute;
     min-width:140px;
     background-color:white;
+   
 }
 .nav li:hover > ul {
     display:block;
+  
 }
 .wrapper {
 	width:95%; 
 	max-width:1400px; 
 	margin:10px; 
     overflow:hidden;    
+  
 }
 header .boton-ingresar {
     float:right;
     line-height:50px;
-    color:#292828;	
+    color:#292828;
+	
 }
 header .boton-publicar {
     float:right;
     line-height:50px;
     color:#f2f2f2;
+
 }
 header .boton-ingresar a {
 	display:inline-block;
@@ -97,11 +113,13 @@ header .boton-ingresar a {
     border-radius:10px;
     margin-left: 10px;
     margin-top: -10px;
+
   
 }
 header .boton-ingresar a:hover {
 	background:red;
 	border-radius:10px;
+ 
 }
 header .boton-publicar a {
 	display:inline-block;
@@ -112,16 +130,19 @@ header .boton-publicar a {
 	font-size:20px;
     font-weight:bold;
     margin-left: 10px;
+    
  
 }
 
 header .boton-publicar a:hover {
 	
 	border-radius:50px;
+ 
 }
-img{
+.imagencabecera{
     float: left;
     margin-top: -10px;
+    
 }
 /* Fin de estilos para cabecera */
 
@@ -622,3 +643,82 @@ input, textarea{
     margin: 0%;
 }
 /* Fin de estilos para el formulario 2*/
+
+/* Estilos para el pie de página */
+.footer{
+    display: flex;
+    background-image: url("../imagenes/fondo\ footer.jpg");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  
+  .footer >img{
+    object-fit: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .footer2 {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  .footer2> div {
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+    text-align: left;
+    line-height: 25px;
+    padding: 15px;
+    margin-right: 40px;
+  }
+  
+  .footer2 > div > h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  #Aplicaciones {
+    color: white;
+  }
+  
+  .footer2 > div > p {
+    line-height: 3px;
+  }
+  .footer2 > div > div > p > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  .opciones > p {
+    margin: 0px;
+    
+  }
+  .opciones > p > a {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .titulo{
+    margin-top: 60px;
+  }
+   .copyright{
+     margin-top: 0px;
+     display: flex;
+    background-image: url("../imagenes/fondo\ footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   } 
+  
+   .copyright > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 12px;
+     color: white;
+   }   
