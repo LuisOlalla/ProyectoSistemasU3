@@ -15,13 +15,196 @@ body {
     /* overflow: hidden*/
 }
 
-/* header {
-    min-height: 15vh;
-    background: #3f3f3f;
+/* INICIO CABECER */
+
+.cabecera1 {
+    box-shadow: 0px 0px 7px 0px white;
+    background-color: skyblue;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    margin: 5px;
+    height: 70px;
+    grid-area: cabecera;
+    border: 1px solid white;
+    width: 100%;
+    z-index: -1;
+}
+.nav {
+    color: #f4f5f5;
+    font-size: 10px;
+    line-height: 70px;
+    float: left;
+    z-index: -1;
+}
+.nav a {
+    display: inline-block;
+    color: rgb(24, 22, 22);
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    font: 150% sans-serif;
+    z-index: -1;
+}
+ul,
+ol {
+    list-style: none;
+    z-index: 1000;
+}
+.nav > li {
+    float: left;
+}
+.nav li a {
+    color: rgb(48, 43, 43);
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+}
+.nav li a:hover {
+    background-color: orange;
+}
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+    background-color: white;
+}
+.nav li:hover > ul {
+    display: block;
+}
+.wrapper {
+    width: 95%;
+    max-width: 1400px;
+    margin: 10px;
+    overflow: hidden;
+}
+header .boton-ingresar {
+    float: right;
+    line-height: 50px;
+    color: #292828;
+}
+header .boton-publicar {
+    float: right;
+    line-height: 50px;
+    color: #f2f2f2;
+}
+header .boton-ingresar a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    background: green;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: -10px;
+}
+header .boton-ingresar a:hover {
+    background: red;
+    border-radius: 10px;
+}
+header .boton-publicar a {
+    display: inline-block;
+    color: rgb(29, 28, 28);
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: normal;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header .boton-publicar a:hover {
+    border-radius: 50px;
+}
+img {
+    float: left;
+    margin-top: -10px;
+}
+
+/* FIN CABECERA */
+
+/* INICIO FOOTER */
+.footer {
     display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+    background-image: url("../imagenes/fondo\ footer.jpg");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer > img {
+    object-fit: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.footer2 {
+    display: flex;
+    width: 100%;
+}
+
+.footer2 > div {
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+    text-align: left;
+    line-height: 25px;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.footer2 > div > h3 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#Aplicaciones {
+    color: white;
+}
+
+.footer2 > div > p {
+    line-height: 3px;
+}
+.footer2 > div > div > p > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.opciones > p {
+    margin: 0px;
+}
+.opciones > p > a {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    margin-top: 60px;
+}
+.copyright {
+    margin-top: 0px;
+    display: flex;
+    background-image: url("../imagenes/fondo\ footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    text-align: center;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.copyright > p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+}
+/* FIN FOOTER */
 
 .container-higher {
     display: flex;
@@ -208,7 +391,7 @@ button:hover {
 .postCard6,
 .postCard7 {
     width: 100%;
-    height: 232px;
+    /* height: 232px; */
     /* max-width: calc(705px - 5px); */
     margin: auto;
     /* height: 100%; */
@@ -223,7 +406,7 @@ button:hover {
     /* margin: 40px 0; */
     border-radius: 5px;
     overflow: hidden;
-    z-index: 1000;
+    z-index: 0;
     width: 30%;
     /* box-sizing: border-box; */
 }
@@ -311,12 +494,17 @@ button:hover {
 
 /* DISEÑO DE LA CARTA DE INFROMACIÓN */
 
-.postingCard_Level1 {
+.postingCard_Level1,
+.postingCard_Level2,
+.postingCard_Level3 {
     display: flex;
     /* height: 50px; */
     width: 100%;
+    /* height: auto; */
 }
-
+/* .postingCard_Level1 {
+    height: 50px;
+} */
 .postingCard_Level1 .CardPrice h2 {
     font-weight: lighter;
     line-height: 0px;
@@ -349,6 +537,15 @@ button:hover {
     display: inline-block;
 }
 
+.postingCard_Level3 {
+    flex-direction: column;
+}
+
+.postingCard_Level3 div {
+    height: 40px;
+}
+
+/* BTONES DEL portal_2 */
 .poster-botones {
     display: flex;
     flex-direction: row;
