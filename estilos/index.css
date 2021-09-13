@@ -9,7 +9,9 @@
     height: 70px;
     grid-area: cabecera;
     border: 1px solid white;
-    width: 1350px;
+    width: 1325px;
+    
+   
   
    
 }
@@ -18,6 +20,10 @@
 	font-size:10px;
 	line-height:70px;
 	float:left;
+  
+  
+  
+  
     
 }
 .nav a {
@@ -27,24 +33,28 @@
 	text-decoration:none;
 	padding:10px 20px;
 	line-height:normal;
-	font-size:20px;
-    font-weight:bold;
-    font: 150% sans-serif;	
+	font-size:15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+   
 
 }
 ul, ol {
     list-style:none;
+    z-index:1000
     
 }
 .nav > li {
     float:left;
+ 
 }
 .nav li a {
   
     color:rgb(48, 43, 43);
     text-decoration:none;
     padding:10px 12px;
-    display:block;   
+    display:block;  
+    
 }
 .nav li a:hover {
     background-color:orange;
@@ -56,25 +66,30 @@ ul, ol {
     position:absolute;
     min-width:140px;
     background-color:white;
+   
 }
 .nav li:hover > ul {
     display:block;
+  
 }
 .wrapper {
 	width:95%; 
 	max-width:1400px; 
 	margin:10px; 
     overflow:hidden;    
+  
 }
 header .boton-ingresar {
     float:right;
     line-height:50px;
-    color:#292828;	
+    color:#292828;
+	
 }
 header .boton-publicar {
     float:right;
     line-height:50px;
     color:#f2f2f2;
+
 }
 header .boton-ingresar a {
 	display:inline-block;
@@ -88,11 +103,13 @@ header .boton-ingresar a {
     border-radius:10px;
     margin-left: 10px;
     margin-top: -10px;
+
   
 }
 header .boton-ingresar a:hover {
 	background:red;
 	border-radius:10px;
+ 
 }
 header .boton-publicar a {
 	display:inline-block;
@@ -103,14 +120,339 @@ header .boton-publicar a {
 	font-size:20px;
     font-weight:bold;
     margin-left: 10px;
+    
  
 }
 
 header .boton-publicar a:hover {
 	
 	border-radius:50px;
+ 
 }
-img{
+.imagencabecera{
     float: left;
     margin-top: -10px;
+    
 }
+
+
+/*Estilos parte 2*/
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 16em;
+    width: 1000px;
+    position: relative;
+    top: 100px;
+    left: 300px;
+    color: #fff;
+    text-align: center;
+    padding-top: 1em;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .imagenfondo{
+    background-image: url(../imagenes/casalujosa.jpg);
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+    background-position: 100%;
+  }
+  .menu1 > h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+  }
+  
+  .menu2 {
+    display: flex;
+    background-color: #eceeef;
+    margin-right: 600px;
+    border-radius: 20px 20px 0px 0px;
+    margin-left: 20px;
+    z-index: 1;
+  }
+  
+  .menu2 > ul > li > a {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+  }
+  
+  .menu2 > ul > li {
+    position: relative;
+    list-style: none;
+    padding-left: 0px;
+    display: inline-block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .menu3{
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .menu_2 li a:active {
+    background: white;
+    border-radius: 10px 10px 10px 10px;
+    text-decoration: underline #faa909 3px;
+    font-weight: bold;
+  }
+  
+  #compra, #alquiler {
+    border-right: solid gray 1px;
+    
+  }
+  
+  .lista-opciones {
+    display: flex;
+    margin-left: 20px;
+  }
+  
+  select {
+    background: white;
+    border: none white;
+    font-size: 16px;
+    height: 50px;
+    padding: 10px 30px;
+    width: 200px;
+    border-radius: 0px 0px 0px 20px;
+    border-right: solid gray 1px;
+  }
+  
+  .boton1 {
+    display: inline-block;
+    padding: 15px 45px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+  }
+  
+  .boton1 > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .opciones {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  
+  input {
+    border: none white;
+  }
+  
+  .boton_ayuda1 {
+    position: absolute;
+    top: 620px;
+    left: 80%;
+    background-color: rgb(62, 0, 90);
+    width: 200px;
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+  }
+  
+  .boton_ayuda1 > a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+  }
+  
+  .contenedor2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 17px;
+  }
+  
+  .propiedades1 {
+    width: 180px;
+    height: 50px;
+    background-color: #ff5e00;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .propiedades1 > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .contenedor-flex {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  
+  .contenedor-flex > div {
+    background-color: #fff;
+    width: 400px;
+    height: 450px;
+    margin: 10px;
+    text-align: center;
+    line-height: 25px;
+    padding: 15px;
+  }
+  .contenedor-flex > div > h3 {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contenedor-flex > div > img {
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  
+  .guia-boton {
+    width: 150px;
+    height: 40px;
+    background-color: #ff5e00;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .guia-boton > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .contenido4 {
+    display: flex;
+    background-color: #f3f7f8;
+    width: 100%;
+    height: 300px;
+  }
+  
+  .contenido5 {
+    display: flex;
+  }
+  
+  .contenido5 > div {
+    width: 230px;
+    height: 300px;
+    margin: 20px;
+    text-align: left;
+    line-height: 25px;
+    padding: 15px;
+    margin-right: 40px;
+  }
+  
+  .contenido5 > div > h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+  }
+  .contenido5 > div > p {
+    line-height: 3px;
+  }
+  .contenido5 > div > div > p > a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+  }
+  #masVe1, #menosVe1, #masCo1, #menosCo1, #masAlqui1, #menosAlqui1, #mas1, #menos1 {
+      font-weight: bold;
+  }
+  
+
+/*Footer*/
+  .footer{
+    display: flex;
+    background-image: url("../imagenes/fondo\ footer.jpg");
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  
+  .footer >img{
+    object-fit: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .footer2 {
+    display: flex;
+    width: 100%;
+  }
+  
+  
+  .footer2> div {
+    width: 100%;
+    height: 300px;
+    margin: 20px;
+    text-align: left;
+    line-height: 25px;
+    padding: 15px;
+    margin-right: 40px;
+  }
+  
+  .footer2 > div > h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  #Aplicaciones {
+    color: white;
+  }
+  
+  .footer2 > div > p {
+    line-height: 3px;
+  }
+  .footer2 > div > div > p > a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+  .opciones > p {
+    margin: 0px;
+    
+  }
+  .opciones > p > a {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .titulo{
+    margin-top: 60px;
+  }
+   .copyright{
+     margin-top: 0px;
+     display: flex;
+    background-image: url("../imagenes/fondo\ footer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   } 
+  
+   .copyright > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     font-size: 12px;
+     color: white;
+   }   
+  
+  
+   
